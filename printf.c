@@ -32,11 +32,19 @@ break;
 case 'd': case 'i':
 print_int(va_arg(args, int));
 count++;
-break; }}
+break;
+default:
+_putchar('%');
+_putchar(*format);
+count ++;
+break; 
+}
+}
 else
 _putchar(*format);
 count++;
-format++; }
+format++; 
+}
 va_end(args);
-return (count);
+return (count); 
 }
