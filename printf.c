@@ -36,8 +36,8 @@ break;
 default:
 _putchar('%');
 _putchar(*format);
-count ++;
-break; 
+count++;
+break;
 }
 }
 else
